@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(45deg, #ee0979, #ff6a00);
+  color: white;
+}
+
+.logo h1 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Subtitle {
+  text-shadow: 2px 2px 4px #000;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+#task-scheduler,
+#study-timer {
+  margin-bottom: 20px;
+  width: 45%;
+  float: left;
+  margin-right: 10%;
+  margin-bottom: 50px;
+}
+
+#study-timer {
+  width: 45%;
+  float: right;
+  margin-right: 0;
+}
+
+#study-timer #timer-display {
+  text-align: left;
+}
+
+#task-scheduler h2,
+#study-timer h2 {
+  margin-top: 0;
+}
+
+.task-checkbox {
+  margin-right: 10px;
+}
+
+.task-label {
+  font-size: 16px;
+}
+
+.task-label.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+#task-form label,
+#study-timer p {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#task-form input,
+#task-form select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#task-form button {
+  padding: 5px 10px;
+}
+
+#task-list {
+  list-style-type: none;
+  padding-top: 10px 0px;
+  clear: both;
+}
+
+#task-list li {
+  margin-top: 20px;
+}
+
+.task {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-label {
+  font-size: 16px;
+}
+
+.task-label.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+
+#study-timer p {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* #study-timer button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+} */
+
+#graph {
+  width: 100%;
+  height: 300px;
+}
+
+#timer-display.editable {
+  border: 1px solid #000;
+  background-color: linear-gradient(45deg, #ee0979, #ff6a00);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#start-alarm {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.timetable {
+  flex: 1;
+  width: 45%;
+  float: right;
+  margin-right: 0;
+  margin-top: 0px;
+  /* College timetable styles here */
+}
+
+.alarm {
+  width: 200px;
+  /* Water alarm styles here */
+}
+
+#start-alarm:hover {
+  background-color: #0056b3;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+}
+
+th {
+  background-color: #4caf50;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #222;
+}
+
+#chart-container {
+  max-width: 400px;
+  margin: 0 0;
+}
+
+#spotify-playlist-container {
+  flex: 1;
+}
+
+.spotify-playlist {
+  text-align: left;
+  display: inline-block;
+}

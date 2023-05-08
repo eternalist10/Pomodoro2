@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="logo">
+      <h1 style="font-family: Helvetica">PomoBuddy</h1>
+      <h2 style="font-family: Helvetica" class="Subtitle">An online study management tool</h2>
+      </div>
+    </div>
+    <div id="task-scheduler">
+      <h2>Task Scheduler</h2>
+      <form id="task-form">
+        <label for="task-name">Task Name:</label>
+        <input type="text" id="task-name" required />
+        <label for="task-deadline">Deadline:</label>
+        <input type="date" id="task-deadline" required />
+
+        <label for="task-priority">Priority:</label>
+        <select id="task-priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <label for="task-category">Category:</label>
+        <select id="task-category" required>
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+          <option value="study">Study</option>
+          <!-- Add more options as needed -->
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+
+      <ul id="task-list"></ul>
+
+      <label for="priority-filter">Filter by Priority:</label>
+      <select id="priority-filter">
+        <option value="all">All</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <!-- Completion filter -->
+      <label for="completion-filter">Filter by Completion:</label>
+      <select id="completion-filter">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="incomplete">Incomplete</option>
+      </select>
+
+      <label for="category-filter">Filter by Category:</label>
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="work">Work</option>
+        <option value="personal">Personal</option>
+        <option value="study">Study</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <div id="productivity-display" style="margin-bottom: 20px;"></div>
+
+      <h2 class="spotify-playlist">Spotify Playlist</h2>
+      <div id="spotify-playlist-container">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Jcdb767UN54Xk604tY5v6?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <p>Enjoy the music!</p>
+  </div>
+  </div>
+
+    </div>
+
+
+    <div id="study-timer">
+      <h2>Study Timer</h2>
+      <p id="timer-display" contenteditable>00:00</p>
+      <button id="start-timer">Start</button>
+      <button id="pause-timer" disabled>Pause</button>
+      <button id="reset-timer" disabled>Reset</button>
+      <button id="edit-timer">Edit</button>
+    </div>
+    <div id="container">
+    <div class="timetable">
+      <table id="timetable">
+        <caption>
+          College Timetable
+        </caption>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:00 AM - 10:00 AM</td>
+            <td>Mathematics</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>English</td>
+            <td>Computer Science</td>
+          </tr>
+          <tr>
+            <td>10:00 AM - 11:00 AM</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>Mathematics</td>
+            <td>Computer Science</td>
+            <td>English</td>
+          </tr>
+          <!-- Add more rows for additional time slots -->
+        </tbody>
+      </table>
+    </div>
+
+    <div id="chart-container">
+      <h2 class="taskch">Task Chart</h2>
+    <canvas id="task-chart"></canvas>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
